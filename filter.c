@@ -142,7 +142,6 @@ void filter(Vec3 g, Vec3 a, Vec3 m, Vec3 n1, Vec3 n2, Vec3 n3, Vec3 I,
     Vec3 h;
     quat_transform(quat_conjugate(q_est_prev), m, &h);
     magVector(lat, lon, t, h);
-    
     gradient(q_est, bVec_NED, m, &q_est_dot_m);
     quat_add(&q_est_dot, q_est_dot, q_est_dot_m);
 
