@@ -6,8 +6,8 @@
 //const float K_P = -0.4f/4000.0f;
 //const float K_D = 2.0f/300.0f;
 
-const float K_P = -300.0f;
-const float K_D = 600.0f;
+const float K_P = -1600.0f;
+const float K_D = -1000.0f;
 
 
 extern void controller(Vec3* T_c, Quaternion q_est, Quaternion q_ref, Quaternion omega_est);

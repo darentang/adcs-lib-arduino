@@ -149,7 +149,7 @@ void filter(Vec3 g, Vec3 a, Vec3 m, Vec3 n1, Vec3 n2, Vec3 n3, Vec3 I,
     
     // using accelorometer
     if (mode == 0 || mode == 2) {
-        const Vec3 g_ref = {0, 0, -1};
+        const Vec3 g_ref = {0, 0, 1};
         gradient(q_est, g_ref, a, &q_est_dot_a);
         quat_add(&q_est_dot, q_est_dot, q_est_dot_a);
     }

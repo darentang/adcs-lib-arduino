@@ -10,5 +10,5 @@ void controller(Vec3* T_c, Quaternion q_est, Quaternion q_ref, Quaternion omega_
 
     T_c->x = -q_err.q2*K_P - q_err_dot.q2*K_D;
     T_c->y = -q_err.q3*K_P - q_err_dot.q3*K_D;
-    T_c->z = -q_err.q4/2.0f*K_P - q_err_dot.q4/2.0f*K_D;
+    T_c->z = -q_err.q4*K_P - q_err_dot.q4*K_D;
 }
